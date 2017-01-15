@@ -84,7 +84,7 @@ echo $label->genCssLabel();
 $image = new TyreLabel('F', 'E', 71, 2,280,"images/");
 $image->genPngLabel();
 
-header('Content-type: image/jpg');
+header('Content-type: image/png');
 imagepng($image);
 imagedestroy($image);
 die;
